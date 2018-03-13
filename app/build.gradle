@@ -1,0 +1,64 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 26
+    defaultConfig {
+        applicationId "org.providence.danco.myapplication"
+        minSdkVersion 19
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+ext {
+    multidexVersion = '1.0.3'
+    supportLibraryVersion = '27.1.0'
+    playServicesVersion = '11.8.0'
+    bartekscPdfViewerVersion = '2.1.0'
+    retrofitVersion = '2.3.0'
+    retrofitAdapterVersion = '2.3.0'
+    rxJavaVersion = '2.1.3'
+    rxAndroidVersion = '2.0.1'
+    butterknifeVersion = '8.5.1'
+    robolectricVersion = '3.6.1'
+    roboelectricShadowsVersion = '3.4-rc2'
+
+    espressoVersion = '2.2.2'
+    daggerVersion = '2.9'
+    loggingInterceptorVersion = '3.8.1'
+    glideVersion = '3.7.0'
+    timberVersion = '4.5.1'
+    mockitoVersion = '2.15.0'
+    junitVersion = '4.8'
+    jsr250ApiVersion = '1.0'
+    concealVersion = '1.1.3'
+    dexmakerMockitoVersion = '2.2.0'
+    uiautomatorVersion = '2.1.1'
+    appDynamicsVersion = '4.3.5.352'
+    materialDialogsVersion = '0.9.5.0'
+    expiringMapVersion = '0.5.8'
+    archLifecycleVersion = '1.1.0'
+
+    virtualVisitVersion = '0.0.06-rc1'
+    dnaCoreVersion = '0.0.05'
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    implementation 'com.android.support:design:26.1.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+
+    compile("com.jakewharton:butterknife:${butterknifeVersion}")
+}

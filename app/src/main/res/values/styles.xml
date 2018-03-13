@@ -1,0 +1,60 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="TextAppearance"></style>
+
+    <style name="TextAppearance.Dna"></style>
+
+    <style name="TextAppearance.Dna.TextInput">
+        <item name="android:textSize">@dimen/text_size_textinput</item>
+        <item name="android:fontFamily">@font/font_sourcesanspro_regular</item>
+    </style>
+
+    <style name="FormPlaceholderTheme">
+        <item name="android:textColorPrimary">@color/black_33</item>
+        <item name="android:textColor">@color/black_33</item>
+        <item name="android:textColorHint">@color/gray2</item>
+    </style>
+
+    <style name="FormPlaceholder">
+        <item name="android:textSize">@dimen/form_placeholder_text_size</item>
+        <item name="android:theme">@style/FormPlaceholderTheme</item>
+        <item name="android:fontFamily">@font/font_sourcesanspro_regular</item>
+        <item name="android:textAppearance">@style/TextAppearance.Dna.TextInput</item>
+    </style>
+
+    <style name="CreateAccountField" parent="FormPlaceholder">
+        <item name="android:textSize">@dimen/text_size_button</item>
+    </style>
+
+    <style name="TextInputLayout" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/red_error</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColorHint">@color/gray1</item>
+        <item name="colorAccent">@color/gray1</item>
+        <item name="colorControlNormal">@color/gray1</item>
+        <!-- TextInputLayout text color-->
+        <item name="colorControlActivated">@color/gray1</item>
+        <!-- EditText line color when EditText on-focus-->
+        <item name="colorControlHighlight">@color/gray1</item>
+
+    </style>
+
+    <dimen name="text_size_button">18sp</dimen>
+</resources>
